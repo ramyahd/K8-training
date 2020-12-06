@@ -7,11 +7,11 @@ dockerImage = ''
 }
 agent any
 stages{
-//stage('Checkout'){
-//steps{
-//github_checkout("main", "https://github.com/ramyahd/K8-training.git")
-//}
-//}
+stage('Checkout'){
+steps{
+github_checkout("main", "https://github.com/cipherashish/node_app.git")
+}
+}
 
 stage('Initialize'){
 steps {
