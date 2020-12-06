@@ -31,6 +31,8 @@ Docker exec –it <container_id> /bin/bash
 •	Now to check if the node.js application is running we can issue the command 
 curlhost –i portnumber which gives the http status as OK
 
+
+
  
 
 
