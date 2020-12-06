@@ -1,7 +1,7 @@
 
 pipeline {
 environment {
-registry = "ramyahd97/python"
+registry = "ramyahd97/centos-httpd"
 registryCredential = 'docker'
 dockerImage = ''
 }
