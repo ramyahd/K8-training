@@ -1,7 +1,7 @@
 
 pipeline {
 environment {
-registry = "nginx"
+registry = "registry"
 registryCredential = 'docker'
 dockerImage = ''
 }
