@@ -33,6 +33,8 @@ curlhost –i portnumber which gives the http status as OK
 
 
 
+
+
  
 
 
