@@ -56,11 +56,11 @@ dockerImage.push()
                 then
                 echo "from if block"
                 docker kill appnode && docker rm appnode
-                docker run -d -p 8765:8080 --name appnode "${registry}":"${BUILD_NUMBER}"
+                docker run -d -p 8760:8080 --name appnode "${registry}":"${BUILD_NUMBER}"
                 docker ps
                else
                 echo "from else block"
-                docker run -d -p 8765:8080 --name appnode "${registry}":"${BUILD_NUMBER}"
+                docker run -d -p 8760:8080 --name appnode "${registry}":"${BUILD_NUMBER}"
                 docker ps
                 fi
                '''
