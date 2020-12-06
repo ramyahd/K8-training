@@ -11,7 +11,7 @@ stages{
 //steps{
 //github_checkout("main", "https://github.com/ramyahd/K8-training.git")
 //}
-}
+}//
 
 stage('Initialize'){
 steps {
