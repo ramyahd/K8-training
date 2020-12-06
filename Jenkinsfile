@@ -1,7 +1,7 @@
 
 pipeline {
 environment {
-registry = "evenea/app_node"
+registry = "docker1practice/soumya-repo"
 registryCredential = 'docker'
 dockerImage = ''
 }
