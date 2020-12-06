@@ -1,7 +1,7 @@
 
 pipeline {
 environment {
-registry = "registry"
+registry = "ramyahd97/python"
 registryCredential = 'docker'
 dockerImage = ''
 }
