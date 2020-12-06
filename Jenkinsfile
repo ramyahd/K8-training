@@ -52,15 +52,15 @@ dockerImage.push()
       stage('Run Image'){
            steps{
                sh ''' 
-               if [ $(docker ps -qf "name=app_node") ]
+               if [ $(docker ps -qf "name=appnode") ]
                 then
                 echo "from if block"
-                docker kill app_node && docker rm app_node
-                docker run -d -p 8765:8080 --name app_node "${registry}":"${BUILD_NUMBER}"
+                docker kill app_node && docker rm appnode
+                docker run -d -p 8765:8080 --name appnode "${registry}":"${BUILD_NUMBER}"
                 docker ps
                else
                 echo "from else block"
-                docker run -d -p 8765:8080 --name app_node "${registry}":"${BUILD_NUMBER}"
+                docker run -d -p 8765:8080 --name appnode "${registry}":"${BUILD_NUMBER}"
                 docker ps
                 fi
                '''
