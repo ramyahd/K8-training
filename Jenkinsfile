@@ -1,7 +1,7 @@
 
 pipeline {
 environment {
-registry = "marvelmeluha/app_node"
+registry = "evenea/app_node"
 registryCredential = 'docker'
 dockerImage = ''
 }
