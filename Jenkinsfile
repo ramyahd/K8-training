@@ -1,7 +1,7 @@
 
 pipeline {
 environment {
-registry = "ramyahd97/centos-httpd"
+registry = "ramyahd97/appnode"
 registryCredential = 'docker'
 dockerImage = ''
 }
