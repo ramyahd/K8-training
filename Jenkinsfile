@@ -18,7 +18,7 @@ checkout([$class: 'GitSCM', branches: [[name: '*/main']],
 stage('Initialize'){
 steps {
 script {
-def dockerHome = tool 'my_Docker'
+def dockerHome = tool 'myDocker'
 env.PATH = "${dockerHome}/bin:${env.PATH}"
 }
 }
