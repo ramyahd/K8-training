@@ -1,6 +1,3 @@
-@Library('lib')_
-
- 
 
 pipeline {
 environment {
