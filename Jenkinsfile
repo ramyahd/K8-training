@@ -1,7 +1,7 @@
 
 pipeline {
 environment {
-registry = "docker1practice/soumya-repo"
+registry = "ramyahd97/python"
 registryCredential = 'docker'
 dockerImage = ''
 }
