@@ -55,7 +55,7 @@ dockerImage.push()
                if [ $(docker ps -qf "name=appnode") ]
                 then
                 echo "from if block"
-                docker kill app_node && docker rm appnode
+                docker kill appnode && docker rm appnode
                 docker run -d -p 8765:8080 --name appnode "${registry}":"${BUILD_NUMBER}"
                 docker ps
                else
